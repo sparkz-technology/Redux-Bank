@@ -1,4 +1,4 @@
-# Redux Banking App
+# Redux Bank
 
 This is a simple Redux-based banking application that allows users to create customers and perform banking operations such as depositing money, withdrawing money, requesting loans, and paying off loans.
 
