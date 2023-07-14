@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Redux Banking App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple Redux-based banking application that allows users to create customers and perform banking operations such as depositing money, withdrawing money, requesting loans, and paying off loans.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+The application includes the following features:
 
-### `npm start`
+- Customer Management: Users can create new customers by providing their full name and national ID.
+- Account Management: Users can perform banking operations on customer accounts, including depositing money, withdrawing money, requesting loans, and paying off loans.
+- Currency Conversion: When depositing money in a non-USD currency, the application automatically converts the amount to USD using the current exchange rate.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The application is built using the following technologies:
 
-### `npm test`
+- Redux: For state management and maintaining the application's global state.
+- React: For building the user interface and components.
+- React Redux: For connecting React components with the Redux store.
+- Redux Toolkit: A package that simplifies common Redux tasks and provides utility functions.
+- JavaScript: The programming language used for implementing the application logic.
+- HTML/CSS: For structuring and styling the user interface.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Setup and Usage
 
-### `npm run build`
+To run the application, follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Install the required dependencies by running `npm install`.
+2. Start the development server using `npm start`.
+3. Open your web browser and navigate to `http://localhost:3000` to access the application.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Code Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The codebase is organized as follows:
 
-### `npm run eject`
+- `src/features/accounts`: Contains the Redux slice for managing account-related state and actions.
+- `src/features/customers`: Contains the Redux slice for managing customer-related state and actions.
+- `src/App.js`: The main component that renders the application.
+- `src/customerSlice.js`: Defines the Redux slice for the customer state and actions.
+- `src/accountSlice.js`: Defines the Redux slice for the account state and actions.
+- `src/Customer.js`: A React component that handles customer creation.
+- `src/store.js`: Configures the Redux store and combines the reducers.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Feel free to explore the code to understand how the application works and customize it according to your requirements.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Note:** This README assumes you have a basic understanding of Redux and React. If you're new to these technologies, it's recommended to refer to the official documentation for detailed explanations.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Enjoy using the Redux Banking App!
